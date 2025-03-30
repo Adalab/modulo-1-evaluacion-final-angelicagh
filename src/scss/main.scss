@@ -1,0 +1,328 @@
+/* @use 'core/reset';
+@use 'components/code';
+@use 'components/links';
+@use 'layout/page';
+@use 'layout/header';
+@use 'layout/footer';
+@use 'pages/index'; */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+:root {
+    --colour-green: #0C474B;
+    --colour-beige: #F0EBE5;
+    --colour-orange: #FF975A;
+    --colour-white: white;
+    --colour-lightgreen: #b6c8c9;
+}
+
+/*HEADER*/
+
+.header__list-hidden {
+    display: none;
+}
+
+.header {
+    background-image: url("../images/header.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+} 
+
+.header__menu-hamburger {
+    display: flex;
+    position: sticky;
+    padding-top: 55px;
+    padding-left: 35px;
+    width: 100vw;;
+}
+
+.header__section1 {
+    display: flex;
+    flex-direction: column;
+   align-items: center; 
+   text-align: center; 
+    gap: 15vh ;
+}
+
+.header__section1-h1-button {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.header__logo1 {
+    width: 250px; 
+    height: auto;
+    margin: -50px;
+}
+
+.header__h1 {
+    color: var(--colour-green);
+    font-size: 1.5rem; 
+}
+
+.header__button {
+    border: none;
+    padding-block: 15px;
+    margin-top: -20px;
+    margin-inline: 80px;
+    color: var(--colour-white);
+    background-color: var(--colour-green);
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    }
+
+/*MAIN*/
+
+.main__section1 {
+    background-color: var( --colour-beige);
+    background-size: cover;
+    height: 150vh;
+}
+
+
+.main__section1-icons-text {
+    display: grid;
+    place-items: center; 
+    text-align: center; 
+    padding-inline:60px;
+    color: var(--colour-green);
+    gap: 60px;
+}
+
+.main__h1 {
+    font-size: 1.5rem;
+    text-align: center;  
+    padding-bottom: 50px;
+    padding-top: 40px;
+    padding-inline: 40px;
+}
+
+.main__h2 {
+    font-size: 1.25rem;
+    padding-top: 40px;
+}
+
+.main__section2 {
+    background-color: var(--colour-orange);
+    color: var(--colour-white);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*QUÉ DIFERENCIA HAY ENTRE ALIGN-ITEMS Y JUSTIFY-CONTENT?*/
+}
+
+.main__transport-icon {
+    width: 100px;
+    height: auto;
+    margin-bottom: -30px;
+}
+
+.main__p {
+    font-size: 0.8rem;
+}
+
+.main__section2-transport {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.main__h4 {
+    padding-top: 15px;
+}
+
+.main__section3 {
+    background-color: var(--colour-beige);
+    color: var(--colour-green);
+    padding-block: 90px;
+    padding-inline: 30px;
+    display: flex;
+    flex-direction: column;
+   align-items: center; 
+    text-align: center;
+}
+
+.main__section3-h1-p {
+    display: flex;
+    flex-direction: column;
+   align-items: center; 
+    text-align: center;
+    gap: 10px;
+}
+
+.main__section3-button {
+    border: none;
+    padding-block: 15px;
+    padding-inline: 20px;
+    color: var(--colour-white);
+    background-color: var(--colour-green);
+    margin-top: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+}
+
+.main__section4 {
+    background-image: url("../images/creando-espacios.jpg");
+    background-size: cover;
+    height: 50vh;
+}
+
+/*FOOTER*/
+
+.footer {
+    background-color: var(--colour-green);
+    color: var(--colour-beige);
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.footer__section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 125px;
+    gap: 20px;
+ 
+}
+
+.footer__h2 {
+    font-size: 1.25rem;
+    color: var(--colour-lightgreen);
+}
+ 
+.footer__ul-p {
+    font-size: 0.8rem;
+    list-style: none;
+    font-weight: normal; 
+
+}
+
+.footer__links {
+    text-decoration: none;
+    color: var(--colour-lightgreen);
+}
+ 
+.footer__icons {
+    display: flex;
+    padding-top: 30px;
+    gap: 15px;
+}
+
+
+.footer__arrow {
+    float: right;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+/*MEDIA QUERIES*/
+
+@media all and (min-width: 900px) {
+
+    .header__h1 {
+        font-size: 2.25rem; 
+    }
+
+    .header__section1-h1-button { /*NO CONSIGO ALINEAR ESTA CAJA A LA IZQUIERDA*/
+        display: flex;
+       margin-right: 420px;
+       margin-left: 100px;
+       text-align: left;
+    }
+
+    .header__button {
+        width: 15vw;
+    }
+
+       .main__section1-icons-text {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center; /*SE SUPONE QUE CON ESTA PROPIEDAD LOS ALINEA*/
+    }
+
+    .main__section1-icon3 {
+        margin-top: -40px;
+    }
+
+    .main__section1 {
+        height: 70vh;
+    }
+
+    .footer__section1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        /* align-items: flex-start; */
+        gap: 60px; 
+        padding-top: 50px;
+        margin-left: 80px;
+    }
+
+    .footer__section1-part3 {
+        padding-left: 70px;
+    }
+
+    .footer__icons {
+       padding-top: 10px; 
+    }
+
+    .footer__icons-arrow {
+        padding-top: -200px;;
+         
+    }
+   
+} 
+
+@media all and (min-width: 1728px) {
+    .header__list-hidden {
+        display: flex;
+        padding-left: 200px;
+        list-style: none;
+        color: var(--colour-green);
+        gap: 50px;
+        padding-top: 80px;
+    }
+
+    .header__menu-hamburger {
+        display: none;
+    }
+
+    .header__logo1 {
+        margin-top: -70px;
+    }
+
+    .main__section1-icon3 {
+        margin-top: -20px;
+    }
+
+    .main__section1 {
+        height: 45vh;
+    }
+
+    .footer__section1 {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 450px;
+    }
+
+ 
+
+}
+
+
+ 
