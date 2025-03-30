@@ -77,8 +77,8 @@ html {
 .header__button {
     border: none;
     padding-block: 15px;
-    margin-top: -20px;
-    margin-inline: 80px;
+    padding-inline: 25px;
+   margin-top: -20px;
     color: var(--colour-white);
     background-color: var(--colour-green);
     font-family: "Poppins", sans-serif;
@@ -157,6 +157,14 @@ html {
     text-align: center;
 }
 
+.main__section3-h1 {
+    font-size: 1.5rem;
+}
+
+.main__section3-p {
+    font-size: 0.8rem;
+}
+
 .main__section3-h1-p {
     display: flex;
     flex-direction: column;
@@ -186,7 +194,7 @@ html {
 
 .footer {
     background-color: var(--colour-green);
-    color: var(--colour-beige);
+    color: var(--colour-lightgreen); /*POR QUÉ SOLO ME CAMBIA EL COLOR DE "TIENDA" Y "PRODUCTOS"???*/
     padding-top: 40px;
     padding-bottom: 60px;
 }
@@ -194,15 +202,19 @@ html {
 .footer__section1 {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-start; /*SI QUITO ESTO SE QUEDA IGUAL, NO AFECTA*/
     padding-left: 125px;
     gap: 20px;
- 
+    /* padding-left: 25%;
+    justify-content: center; */
+    /* width: 50%;
+    margin: 0 auto;
+ */
 }
 
 .footer__h2 {
     font-size: 1.25rem;
-    color: var(--colour-lightgreen);
+   color: var(--colour-lightgreen); 
 }
  
 .footer__ul-p {
@@ -214,7 +226,7 @@ html {
 
 .footer__links {
     text-decoration: none;
-    color: var(--colour-lightgreen);
+    color: var(--colour-lightgreen); 
 }
  
 .footer__icons {
@@ -238,21 +250,26 @@ html {
         font-size: 2.25rem; 
     }
 
-    .header__section1-h1-button { /*NO CONSIGO ALINEAR ESTA CAJA A LA IZQUIERDA*/
+    .header__section1-h1-button {
         display: flex;
-       margin-right: 420px;
-       margin-left: 100px;
-       text-align: left;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 210px;
+        padding-right: 20vw; 
+        width: 60vw;
+        gap: 20px;
+        text-align: left;
+        margin-bottom: 20px;
     }
 
-    .header__button {
-        width: 15vw;
+    .header__h1 {
+        font-size: 2.25rem;
     }
 
-       .main__section1-icons-text {
+        .main__section1-icons-text {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        align-items: center; /*SE SUPONE QUE CON ESTA PROPIEDAD LOS ALINEA*/
+        align-items: center; 
     }
 
     .main__section1-icon3 {
@@ -260,10 +277,31 @@ html {
     }
 
     .main__section1 {
-        height: 70vh;
+        height: 50vh;
     }
 
-    .footer__section1 {
+/*     .main__h1 {
+       width: 600px;  
+       margin-right: 20vw; 
+      margin-inline: 30vw;  
+      margin-left: 20vw;
+      border: 1px solid black;
+    }
+ */
+
+ .main__h2 {
+    font-size: 1.875rem;
+}
+
+.main__section3-h1 {
+    font-size: 1.875rem;
+}
+
+.main__section4 {
+  height: 70vh;
+}
+
+     .footer__section1 {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
@@ -281,11 +319,11 @@ html {
        padding-top: 10px; 
     }
 
-    .footer__icons-arrow {
-        padding-top: -200px;;
-         
+    .footer__arrow {
+        padding-right: 60px;
+        margin-top: -45px;
     }
-   
+
 } 
 
 @media all and (min-width: 1728px) {
