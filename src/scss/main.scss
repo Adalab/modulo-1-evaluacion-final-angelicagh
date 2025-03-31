@@ -43,10 +43,10 @@ html {
 
 .header__menu-hamburger {
     display: flex;
-    position: sticky;
+    position: fixed;
     padding-top: 55px;
     padding-left: 35px;
-    width: 100vw;;
+    width: 100vw;
 }
 
 .header__section1 {
@@ -54,7 +54,7 @@ html {
     flex-direction: column;
    align-items: center; 
    text-align: center; 
-    gap: 15vh ;
+    gap: 8vh ;
 }
 
 .header__section1-h1-button {
@@ -66,7 +66,7 @@ html {
 .header__logo1 {
     width: 250px; 
     height: auto;
-    margin: -50px;
+   margin-top: 20px; 
 }
 
 .header__h1 {
@@ -109,6 +109,7 @@ html {
     padding-bottom: 50px;
     padding-top: 40px;
     padding-inline: 40px;
+    color: var(--colour-green)
 }
 
 .main__h2 {
@@ -155,6 +156,7 @@ html {
     flex-direction: column;
    align-items: center; 
     text-align: center;
+
 }
 
 .main__section3-h1 {
@@ -173,7 +175,7 @@ html {
     gap: 10px;
 }
 
-.main__section3-button {
+.main__section3-button  {
     border: none;
     padding-block: 15px;
     padding-inline: 20px;
@@ -182,13 +184,25 @@ html {
     margin-top: 30px;
     font-family: "Poppins", sans-serif;
     font-weight: bold;
+    /* margin-bottom: 50px; */
 }
 
-.main__section4 {
+.main__section4-img {
+    
+    min-width: 100%;
+   
+    /* margin-bottom: -6px; */
+
+}
+
+
+
+/* .main__section4 {
     background-image: url("../images/creando-espacios.jpg");
     background-size: cover;
-    height: 50vh;
-}
+    height: 50vh; */
+/*NOTA: VOY A OCULTARLA TEMPORALMENTE*/
+/*}*/
 
 /*FOOTER*/
 
@@ -250,21 +264,16 @@ html {
         font-size: 2.25rem; 
     }
 
-    .header__section1-h1-button {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding-top: 210px;
-        padding-right: 20vw; 
-        width: 60vw;
-        gap: 20px;
-        text-align: left;
-        margin-bottom: 20px;
-    }
 
-    .header__h1 {
-        font-size: 2.25rem;
-    }
+    .header__section1-h1-button {
+        gap: 20px;
+        padding-top: 210px;
+        align-items: flex-start;
+        padding-right: 25vw;
+        /* border: 1px solid black; */
+        width: 60vw;
+        text-align: left;
+     }
 
         .main__section1-icons-text {
         display: grid;
@@ -291,6 +300,8 @@ html {
 
  .main__h2 {
     font-size: 1.875rem;
+    
+   
 }
 
 .main__section3-h1 {
@@ -334,6 +345,7 @@ html {
         color: var(--colour-green);
         gap: 50px;
         padding-top: 80px;
+        position: fixed;
     }
 
     .header__menu-hamburger {
@@ -341,12 +353,48 @@ html {
     }
 
     .header__logo1 {
-        margin-top: -70px;
+        margin-top: 20px;
+    }
+
+    .header__h1 {
+        font-size: 2.25rem;
     }
 
     .main__section1-icon3 {
         margin-top: -20px;
     }
+
+    .main__h1 {
+        font-size: 2.25rem;
+    }
+
+    .main__h2 {
+        font-size: 1.5rem;
+    }
+
+ /*    .main__h2-transport { *//*HAY UNA CLASE QUE COINCIDE, EL MAIN__H2, REVISAR*/
+        /*font-size: 2.25rem;
+        padding-top: 30px;
+    } */
+
+    .main__p {
+        font-size: 16px;
+    }
+
+    
+
+
+
+
+   
+
+    .header__section1-h1-button {
+        
+       text-align: right
+        
+
+    }
+
 
     .main__section1 {
         height: 45vh;
@@ -357,8 +405,22 @@ html {
         justify-content: flex-start;
         padding-left: 450px;
     }
+/* 
+  .main__section3 {
+    display: flex;
+    flex-direction: row;
+    
+  }
 
- 
+  .main__section4 {
+    position: absolute;
+    z-index: 10;
+    border: 1px solid black;
+  }
+ */
+
+  
+
 
 }
 
