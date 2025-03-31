@@ -187,22 +187,13 @@ html {
     /* margin-bottom: 50px; */
 }
 
-.main__section4-img {
-    
-    min-width: 100%;
-   
-    /* margin-bottom: -6px; */
-
+ .image-spaces {
+   height: auto; 
+   width: 100vw;
+   margin-bottom: -8px; 
 }
 
 
-
-/* .main__section4 {
-    background-image: url("../images/creando-espacios.jpg");
-    background-size: cover;
-    height: 50vh; */
-/*NOTA: VOY A OCULTARLA TEMPORALMENTE*/
-/*}*/
 
 /*FOOTER*/
 
@@ -211,19 +202,18 @@ html {
     color: var(--colour-lightgreen); /*POR QUÉ SOLO ME CAMBIA EL COLOR DE "TIENDA" Y "PRODUCTOS"???*/
     padding-top: 40px;
     padding-bottom: 60px;
+    display: flex;
+  justify-content: center;  
 }
 
 .footer__section1 {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /*SI QUITO ESTO SE QUEDA IGUAL, NO AFECTA*/
-    padding-left: 125px;
+    /* align-items: flex-start;  *//*SI QUITO ESTO SE QUEDA IGUAL, NO AFECTA*/
+    /* padding-left: 300px; */
     gap: 20px;
-    /* padding-left: 25%;
-    justify-content: center; */
-    /* width: 50%;
-    margin: 0 auto;
- */
+  
+  
 }
 
 .footer__h2 {
@@ -250,12 +240,7 @@ html {
 }
 
 
-.footer__arrow {
-    float: right;
-    padding-top: 20px;
-    padding-right: 20px;
-}
-
+ 
 /*MEDIA QUERIES*/
 
 @media all and (min-width: 900px) {
@@ -281,9 +266,15 @@ html {
         align-items: center; 
     }
 
+    .main__section1-icon1 {
+        margin-top: -40px;
+    }
+
     .main__section1-icon3 {
         margin-top: -40px;
     }
+
+    
 
     .main__section1 {
         height: 50vh;
@@ -360,9 +351,31 @@ html {
         font-size: 2.25rem;
     }
 
+    .main__section1-icon1 {
+        margin-top: 0px;
+    }
+
     .main__section1-icon3 {
         margin-top: -20px;
     }
+
+    .icon-text-1 {
+        width: 15vw;
+        
+    }
+
+    .icon-text-2 {
+        width: 15vw;
+        
+    }
+    .icon-text-3 {
+        width: 15vw;
+    }
+
+    .main__section1-icons-text {
+        padding-inline: 200px;
+    }
+
 
     .main__h1 {
         font-size: 2.25rem;
@@ -372,6 +385,10 @@ html {
         font-size: 1.5rem;
     }
 
+
+.main__section2 {
+    padding-block: 60px;
+}
  /*    .main__h2-transport { *//*HAY UNA CLASE QUE COINCIDE, EL MAIN__H2, REVISAR*/
         /*font-size: 2.25rem;
         padding-top: 30px;
@@ -397,7 +414,7 @@ html {
 
 
     .main__section1 {
-        height: 45vh;
+        height: 30vh;
     }
 
     .footer__section1 {
@@ -405,24 +422,76 @@ html {
         justify-content: flex-start;
         padding-left: 450px;
     }
-/* 
-  .main__section3 {
-    display: flex;
-    flex-direction: row;
-    
-  }
 
-  .main__section4 {
-    position: absolute;
-    z-index: 10;
+.main__section3-section4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.main__section3 {
+    width: 50vw;
+    height: auto;
+    display: flex;
+    justify-content:center;
+
+
+    
+}
+
+.image-spaces {
+    width: 100%;
+} 
+
+.main__section3 {
+    align-items: flex-start;
+    padding-left: 18vw;
+}
+
+.main__section3-h1 {
+    font-size: 2.25rem;
+   /*  text-align: left; */
+   align-items: flex-start;
+   border: 1px solid black;
+   
+}
+
+.main__section3-h1-p {
+    align-items: flex-start;
+    text-align: left;
     border: 1px solid black;
-  }
- */
+    width: 400px;
+
+}
+
+.main__section3-button {
+    display: flex;
+    align-items: flex-start;
+    border: 1px solid black;
+}
+
+
+/*     .main__section3 {
+        gap: 20px;
+        padding-top: 210px;
+        align-items: flex-start;
+        padding-right: 25vw;
+        /* border: 1px solid black; */
+      /*   width: 60vw;
+        text-align: left;
+     } */
+ 
+
+}
+
+
+
+
+
+
 
   
 
 
-}
 
 
  
