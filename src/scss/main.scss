@@ -142,6 +142,9 @@ html {
         margin-bottom: 20px;
     }
 
+    &__h2 {
+        text-align: center;
+    }
 
     &__p {
     font-size: 0.8rem;
@@ -200,7 +203,7 @@ html {
    height: auto; 
    width: 100vw;
    max-width: 100%;
-   margin-bottom: -8px; 
+   display: block;
 }
 
 /*FOOTER*/
